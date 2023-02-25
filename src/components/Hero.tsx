@@ -30,18 +30,24 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="w-1/2 relative">
-        <img className="absolute z-10" src="./hero/subhero-image1.png" alt="" />
-        <img
-          className="absolute -right-5 bottom-0 z-10"
-          src="./hero/subhero-image2.png"
-          alt=""
-        />
-        <img
-          className="absolute right-5"
-          src="./hero/hero-image.png"
-          alt="Hero Image"
-        />
+      <div className="w-1/2">
+        <div className="text-right relative mr-3">
+          <img
+            className="inline-block"
+            src="./hero/hero-image.png"
+            alt="Hero Image"
+          />
+          <img
+            className="absolute top-0 z-10"
+            src="./hero/subhero-image1.png"
+            alt=""
+          />
+          <img
+            className="absolute -right-9 bottom-0 z-10"
+            src="./hero/subhero-image2.png"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );
