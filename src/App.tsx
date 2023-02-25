@@ -1,7 +1,12 @@
+import Layout from "./components/Layout";
+import Nav from "./components/Nav";
+
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Layout>
+        <Nav />
+      </Layout>
     </div>
   );
 }
