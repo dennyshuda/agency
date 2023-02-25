@@ -18,7 +18,7 @@ export default function Price() {
     },
     {
       title: "Expert Plan",
-      price: "$19",
+      price: "$99",
       desc: [
         "SEO Audits",
         "UI UI Audits",
