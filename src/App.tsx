@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Price from "./components/Price";
 import Project from "./components/Project";
 import Services from "./components/Services";
+import Team from "./components/Team";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Services />
         <Project />
         <Price />
+        <Team />
       </Layout>
     </div>
   );
