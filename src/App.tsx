@@ -1,3 +1,5 @@
+import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Layout from "./components/Layout";
 import Nav from "./components/Nav";
@@ -18,7 +20,9 @@ function App() {
         <Price />
         <Team />
         <Testimonial />
+        <Blog />
       </Layout>
+      <Footer />
     </div>
   );
 }
