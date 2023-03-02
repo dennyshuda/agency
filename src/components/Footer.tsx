@@ -4,8 +4,8 @@ export default function Footer() {
   return (
     <div className="bg-second text-white">
       <Layout>
-        <div className="relative bottom-20 flex gap-5 bg-yellow-400 py-10 px-14 rounded-xl">
-          <div className="w-5/12 space-y-5 font-bold">
+        <div className="relative bottom-20 flex flex-col md:flex-row gap-5 bg-yellow-400 py-10 px-5 lg:px-14 rounded-xl">
+          <div className="md:w-5/12 space-y-5 font-bold text-center md:text-left">
             <h3 className="bg-yellow-500 py-1 px-5 text-xs rounded-full inline-block">
               Subscribe To Our Email
             </h3>
@@ -14,7 +14,7 @@ export default function Footer() {
               There are many variations of passages of Lorem Ipsum available
             </p>
           </div>
-          <div className="w-7/12 flex items-center">
+          <div className="md:w-7/12 flex items-center">
             <div className="relative w-full">
               <input
                 className="focus:outline-none placeholder:text-white placeholder:text-center rounded-full w-full bg-yellow-500 py-5 px-10"
@@ -41,25 +41,25 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex py-5">
-          <div className="w-1/3">
+        <div className="flex flex-col lg:flex-row gap-5 py-5">
+          <div className="lg:w-1/3 w-full">
             <div className="flex gap-3 items-center">
               <img src="./logo.svg" alt="Agency Logo" />
               <h1 className="font-bold text-2xl">Agency</h1>
             </div>
             <p>Copyright © 2021 By Depu</p>
           </div>
-          <div className="w-1/3">
+          <div className="lg:w-1/3 w-full">
             <h1 className="font-bold text-2xl">Information Guide</h1>
             <p className="font-bold">Info Inquires Product</p>
             <p>info@agency.co.id</p>
           </div>
-          <div className="w-1/3">
+          <div className="lg:w-1/3 w-full">
             <h1 className="font-bold text-2xl">Want to say hi?</h1>
             <p className="font-bold">General Inquires</p>
             <p>support@agency.co.id</p>
           </div>
-          <div className="w-1/3">
+          <div className="lg:w-1/3 w-full">
             <h1 className="font-bold text-2xl">Find us on social media.</h1>
             <p className="font-bold">Social Media</p>
           </div>

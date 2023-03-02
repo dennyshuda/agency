@@ -3,9 +3,9 @@ export default function Nav() {
     <nav className="flex justify-between items-center py-5">
       <div className="flex items-center gap-3">
         <img className="w-10" src="./logo.svg" alt="Agency Logo" />
-        <h1 className="font-extrabold text-3xl">Agency</h1>
+        <h1 className="font-extrabold text-xl lg:text-3xl">Agency</h1>
       </div>
-      <div className="space-x-5 text-2xl font-semibold">
+      <div className="space-x-5 text-2xl font-semibold hidden md:block">
         <a href="/">Home</a>
         <a href="/">About</a>
         <a href="/">Service</a>
@@ -13,7 +13,7 @@ export default function Nav() {
         <a href="/">Contact</a>
       </div>
       <div className="text-xl font-semibold text-second">
-        <a className="bg-first py-4 px-5 rounded-md" href="/">
+        <a className="bg-first py-4 px-5 hidden rounded-md" href="/">
           Get Started
         </a>
       </div>

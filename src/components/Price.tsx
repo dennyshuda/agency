@@ -31,28 +31,30 @@ export default function Price() {
   ];
   return (
     <div className="mt-40">
-      <div className="font-bold mx-auto w-1/2 text-center my-10 space-y-5">
-        <h2 className="text-first text-3xl">Pricing Plans</h2>
-        <h1 className="text-5xl">The Best Solutions for Our Clients</h1>
+      <div className="font-bold mx-auto lg:w-1/2 text-center my-10 space-y-5">
+        <h2 className="text-first lg:text-3xl text-xl">Pricing Plans</h2>
+        <h1 className="lg:text-5xl text-3xl">
+          The Best Solutions for Our Clients
+        </h1>
         <p className="font-normal text-lg">
           Fusce dignissim blandit justo, eget elementum risus tristique. Nunc
           lacus lacus, sit amet accumsan est pulvinar non. Praesent tristique
           enim lorem.
         </p>
       </div>
-      <div className="flex flex-wrap justify-between gap-y-10">
+      <div className="flex flex-col items-center lg:flex-row lg:flex-wrap lg:justify-between gap-y-10">
         {plans.map((plan, index) => {
           return (
             <div
-              className="w-96 h-[35rem] py-10 flex flex-col justify-between shadow-2xl text-center rounded-md"
+              className="px-10 h-[35rem] py-10 flex flex-col justify-between shadow-2xl text-center rounded-md"
               key={index}
             >
               <div className="space-y-3">
-                <h2 className="text-3xl font-bold">{plan.title}</h2>
-                <h1 className="text-6xl font-bold">{plan.price}</h1>
+                <h2 className="lg:text-3xl text-xl font-bold">{plan.title}</h2>
+                <h1 className="lg:text-6xl text-4xl font-bold">{plan.price}</h1>
                 {plan.desc.map((item, index) => {
                   return (
-                    <li className="text-first text-2xl" key={index}>
+                    <li className="text-first lg:text-2xl text-lg" key={index}>
                       <span className="text-black">{item}</span>
                     </li>
                   );

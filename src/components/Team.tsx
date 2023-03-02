@@ -18,19 +18,19 @@ export default function Team() {
   ];
   return (
     <div className="mt-20">
-      <div className="flex">
-        <div className="w-4/12">
-          <div className="font-bold my-10 space-y-5">
-            <h2 className="text-first text-3xl">Team Work</h2>
-            <h1 className="text-5xl">Our Professional Team</h1>
-            <p className="text-justify font-normal w-10/12">
+      <div className="flex flex-col xl:flex-row">
+        <div className="xl:w-4/12">
+          <div className="font-bold my-10 space-y-5 text-center xl:text-left">
+            <h2 className="text-first lg:text-3xl text-xl">Team Work</h2>
+            <h1 className="lg:text-5xl text-3xl">Our Professional Team</h1>
+            <p className="xl:text-justify font-normal xl:w-10/12">
               Fusce dignissim blandit justo, eget elementum risus tristique.
-              Nunc lacus lacus, sit amet accumsan est pulvinar non.{" "}
+              Nunc lacus lacus, sit amet accumsan est pulvinar non.
             </p>
           </div>
         </div>
-        <div className="w-8/12">
-          <div className="flex justify-between">
+        <div className="xl:w-8/12">
+          <div className="flex flex-wrap gap-5 justify-center xl:justify-between">
             {teams.map((team, index) => {
               return (
                 <div key={index} className="bg-white rounded-md shadow-md">

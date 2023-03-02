@@ -5,5 +5,5 @@ interface Children {
 }
 
 export default function Layout({ children }: Children) {
-  return <div className="container mx-auto px-10">{children}</div>;
+  return <div className="container mx-auto px-5 md:px-10">{children}</div>;
 }

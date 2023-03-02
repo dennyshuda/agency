@@ -21,25 +21,32 @@ export default function Testimonial() {
       comment:
         "Duis rhoncus dui venenatis consequat porttitor. Etiam aliquet congue consequat. In posuere, nunc sit amet laoreet blandit, urna sapien imperdiet lectus, et molestie sem tortor quis dui.",
     },
+    {
+      name: "John Doe",
+      image: "./testimonial/person.png",
+      company: "KFC",
+      comment:
+        "Duis rhoncus dui venenatis consequat porttitor. Etiam aliquet congue consequat. In posuere, nunc sit amet laoreet blandit, urna sapien imperdiet lectus, et molestie sem tortor quis dui.",
+    },
   ];
 
   return (
     <div className="mt-10">
       <div className="font-bold mx-auto text-center my-10 space-y-5">
-        <h2 className="text-first text-3xl">Testimonial</h2>
-        <h1 className="text-5xl">What Our Client's Say</h1>
+        <h2 className="text-first lg:text-3xl text-xl">Testimonial</h2>
+        <h1 className="lg:text-5xl text-3xl">What Our Client's Say</h1>
         <p className="font-normal text-lg">
           Nunc lacus lacus, sit amet accumsan est pulvinar non. Praesent
           tristique enim lorem.
         </p>
       </div>
       <div>
-        <div className="flex justify-between gap-3">
+        <div className="flex overflow-x-scroll scrollbar-hide gap-3">
           {clients.map((client, index) => {
             return (
               <div
                 key={index}
-                className="max-w-md py-3 px-5 bg-white shadow-md rounded-md space-y-3"
+                className="flex-none w-2/3 md:w-1/3 py-3 px-5 bg-white shadow-md rounded-md space-y-3"
               >
                 <div className="flex gap-5 items-center">
                   <div>

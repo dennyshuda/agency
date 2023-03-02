@@ -22,10 +22,10 @@ export default function Blog() {
   return (
     <div>
       <div className="font-bold mx-auto text-center my-10 space-y-5">
-        <h2 className="text-first text-3xl">Blog</h2>
-        <h1 className="text-5xl">Recent Blog Daily</h1>
+        <h2 className="text-first lg:text-3xl text-xl">Blog</h2>
+        <h1 className="lg:text-5xl text-3xl">Recent Blog Daily</h1>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-wrap justify-center gap-5 xl:justify-between">
         {blogs.map((blog, index) => {
           return (
             <div key={index} className="relative rounded-md">
@@ -47,7 +47,7 @@ export default function Blog() {
         })}
       </div>
       <div className="my-40">
-        <div className="flex items-center justify-between gap-5">
+        <div className="flex items-center flex-col md:flex-row justify-between gap-5">
           <div className="text-center font-bold">
             <h1 className="text-first text-5xl">100+</h1>
             <p className="text-2xl opacity-70">Trusted Companies</p>

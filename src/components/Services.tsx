@@ -24,14 +24,16 @@ export default function Services() {
 
   return (
     <div className="mt-40">
-      <div className="flex">
-        <div className="w-1/2 relative">
-          <div className="w-10/12 absolute top-1/2 -translate-y-1/2 space-y-10">
-            <h3 className="text-first text-3xl font-bold">Our Services</h3>
-            <h1 className="text-6xl font-bold">
+      <div className="flex flex-col xl:flex-row">
+        <div className="xl:w-1/2 xl:relative">
+          <div className="xl:w-10/12 xl:absolute xl:top-1/2 xl:-translate-y-1/2 space-y-10">
+            <h3 className="text-first text-xl lg:text-3xl font-bold">
+              Our Services
+            </h3>
+            <h1 className="lg:text-6xl text-3xl font-bold">
               We Create Best Digital Products
             </h1>
-            <p className="text-3xl text-justify">
+            <p className="lg:text-3xl text-xl text-justify">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
@@ -44,11 +46,11 @@ export default function Services() {
             </a>
           </div>
         </div>
-        <div className="w-1/2">
-          <div className="flex flex-wrap justify-between gap-y-20">
+        <div className="xl:w-1/2 mt-5 xl:mt-0">
+          <div className="flex justify-center flex-row flex-wrap xl:justify-between gap-5 xl:gap-y-20">
             {products.map((product) => {
               return (
-                <div className="w-72 shadow-md even:relative even:top-16 rounded-md px-5 py-10 space-y-3 bg-[#F5F5F5]">
+                <div className="w-72 shadow-md xl:even:relative xl:even:top-16 rounded-md px-5 py-10 space-y-3 bg-[#F5F5F5]">
                   <img src={product.icon} alt={product.title} />
                   <h1 className="text-3xl font-bold">{product.title}</h1>
                   <p>{product.text}</p>
