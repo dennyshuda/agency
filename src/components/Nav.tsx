@@ -13,7 +13,7 @@ export default function Nav() {
         <a href="/">Contact</a>
       </div>
       <div className="text-xl font-semibold text-second">
-        <a className="bg-first py-4 px-5 hidden rounded-md" href="/">
+        <a className="bg-first py-4 px-5 hidden md:block rounded-md" href="/">
           Get Started
         </a>
       </div>
